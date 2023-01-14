@@ -1,0 +1,21 @@
+<audio
+  src="/assets/audio/63 - The Mystery [Unreleased].mp3"
+  #audioRef
+  controls
+  (play)="handlePlay()"
+></audio>
+
+<app-equalizer #eqRef></app-equalizer>
+
+<canvas
+  oscilloscope
+  #timeDomainOscilloscope="oscilloscope"
+  type="time"
+  [fftSize]="1024"
+></canvas>
+<canvas
+  oscilloscope
+  #frequencyDomainOscilloscope="oscilloscope"
+  type="frequency"
+  [fftSize]="1024"
+></canvas>

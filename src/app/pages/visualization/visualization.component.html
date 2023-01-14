@@ -1,0 +1,10 @@
+<button
+  mat-stroked-button
+  [disabled]="!loaded"
+  (click)="handleStart()"
+  #playButton
+>
+  ▶️
+</button>
+<p *ngIf="loadProgress < 100" class="progress">已加载：{{ loadProgress }}%</p>
+<canvas #canvasRef></canvas>

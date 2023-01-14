@@ -1,0 +1,16 @@
+<audio
+  src="assets/audio/63 - The Mystery [Unreleased].mp3"
+  controls
+  #audioRef
+  (play)="handlePlay()"
+></audio>
+
+<mat-form-field appearance="fill">
+  <mat-label>环境效果</mat-label>
+  <mat-select [(value)]="mode">
+    <mat-option value="无">无</mat-option>
+    <mat-option *ngFor="let impulse of impulseList" [value]="impulse.name">
+      {{ impulse.name }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>

@@ -1,0 +1,15 @@
+<button mat-stroked-button (click)="handlePlay()">播放白噪声</button>
+
+<canvas
+  oscilloscope
+  #timeDomainOscilloscope="oscilloscope"
+  [fftSize]="2048"
+  type="time"
+></canvas>
+
+<canvas
+  oscilloscope
+  #frequencyDomainOscilloscope="oscilloscope"
+  [fftSize]="2048"
+  type="frequency"
+></canvas>

@@ -1,0 +1,14 @@
+<button mat-stroked-button color="primary" (click)="handleClickStart()">
+  🎙️
+</button>
+<canvas
+  oscilloscope
+  #timeDomainOscilloscope="oscilloscope"
+  [fftSize]="1024"
+></canvas>
+<canvas
+  oscilloscope
+  #frequencyDomainOscilloscope="oscilloscope"
+  type="frequency"
+  [fftSize]="1024"
+></canvas>
